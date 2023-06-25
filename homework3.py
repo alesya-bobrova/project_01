@@ -10,15 +10,11 @@ class Matrix:
     def set_value(self, row, col, value):
         if 0 <= row < self.rows and 0 <= col < self.cols:
             self.matrix[row][col] = value
-        else:
-            raise IndexError("Invalid row or column index")
-
+    
     def replace_value(self, row, col, value):
         if 0 <= row < self.rows and 0 <= col < self.cols:
             self.matrix[row][col] = value
-        else:
-            raise IndexError("Invalid row or column index")
-
+       
     def num_rows(self):
         return self.rows
 
